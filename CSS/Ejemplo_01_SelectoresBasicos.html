@@ -1,0 +1,49 @@
+<!-- Ejemplo_01_SelectoresBasicos.html-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Selector Universal */
+        * {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Selector Base*/
+        span {
+            color: rgb(253, 51, 226);
+            background: rgb(202, 177, 37);
+        }
+
+        /*Selector descendente */
+        p a {
+            color: green;
+        }
+
+        p a span {
+            color: red;
+        }
+        p > a{
+            font-weight: bold;
+
+        } 
+        p > span + a {border: 2px solid blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p a>Parrafo 1</p>
+    <p>Parrafo 2</p>
+    <p>Parrafo 3 con <a href="#">enlace</a></p>
+    <p>Parrafo 4 <span> con <a href="#">enlace</a></span></p>
+    <p>Parrafo 5 <span> con </span><a href="#">enlace</a></p>
+
+</body>
+
+</html>

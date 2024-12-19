@@ -1,0 +1,51 @@
+<!--Ejemplo_05_Bordes.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes</title>
+    <style>
+        p {
+            width: 50px;
+
+        }
+
+        article p:nth-last-child() {
+            border-style: dotted;
+            /*puntado */
+            border-style: dashed;
+            /*rayas */
+            border-style: double;
+            /*Linea double*/
+        }
+
+        article p:nth-last-child() {
+            border-style: groove;
+            /*Grabado */
+            border-style: ridge;
+            /*Relieve */
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <p>parrafo 1 </p>
+        <p>parrafo 2 </p>
+        <p>parrafo 3</p>
+        <p>parrafo 4</p>
+    </article>
+    <article>
+        <p>parrafo 1 </p>
+        <p>parrafo 2 </p>
+        <p>parrafo 3</p>
+        <p>parrafo 4</p>
+    </article>
+
+
+</body>
+
+</html>
